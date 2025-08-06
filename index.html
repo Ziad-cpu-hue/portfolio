@@ -395,6 +395,63 @@ img {
   }
 }
 /* ======== نهاية الإضافات ======== */
+/* ======== تحسين ريسبونسف قسم Projects ======== */
+.projects .content {
+  display: grid;
+  /* أعمدة مرنة بحجم أدنى 250px وأقصى 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* مسافة بين الكروت */
+  padding: 0 20px; /* هوامش جانبية */
+}
+
+.project-card {
+  /* نجعل العرض 100% داخل الشبكة */
+  width: 100% !important;
+  margin: 0 !important;
+  transition: 0.5s ease;
+}
+
+.project-card .project-image img {
+  /* نتأكد من أن الصورة تغطي العرض بالكامل */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* تعديل هوامش القسم نفسه على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .projects {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+    background-attachment: scroll !important;
+  }
+  .projects .title {
+    margin-bottom: 20px !important;
+    font-size: 1.8em !important;
+  }
+}
+
+/* تقليل حجم العنوان الداخلي على الشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+  .project-info {
+    padding: 0.8em !important;
+  }
+  .project-category {
+    font-size: 0.75em !important;
+  }
+  .project-title span {
+    font-size: 0.9em !important;
+  }
+}
+
+/* إزالة التأثير الضخم على اللمس للشاشات الصغيرة */
+@media (hover: none) {
+  .project-card:hover {
+    transform: none !important;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1) !important;
+  }
+}
+/* ======== نهاية تحسين Projects ======== */
 
   </style>
   <body>
@@ -589,5 +646,6 @@ img {
     </footer>
   </body>
 </html>
+
 
 
