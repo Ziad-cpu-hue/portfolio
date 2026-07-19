@@ -1,455 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Tajawal:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>portfolio</title>
   </head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
-}
-
-
-header {
-    background-color: #f0f0f0;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px ;
-}
-
-.logo{
-    text-decoration: none;
-    color: #3a6cf4;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-}
-
-.navigation a{
-    color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
-}
-
-.navigation a:hover{
-    color: #601cfc;
-}
-
-section {
-    padding: 100px 200px;
-}
-
-.main {
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   align-items: center;
-   background : url(images/FRGD.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-}
- 
-.main h2 {
-    color: #fff;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
-.main h2 span {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4e9eff;
-    font-size: 3em;
-    font-weight: 600;
-}
-
-.main h3 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-}
-
-.main-btn:hover {
-    background-color: #0a49f6;
-    transform: scale(1.1);
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 1.7em;
-    padding-right: 30px;
-}
-
-.title {
-    display: flex;
-    justify-content: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.cards {
-    background : url(images/Color.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.card {
-    background-color:  white;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card .icon {
-    color: #3a6cf4;
-    font-size: 8em;
-    text-align: center;
-}
-
-.info {
-    text-align: center;
-}
-
-.info h3{
-    color: #3a6cf4;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
-.info p {
-  color: #666666;
-  font-size: 1em;
-  line-height: 1.4;
-}
-.projects {
-    background-image: url(images/coding-background-texture.jpg), linear-gradient(180deg, #474ab6 0%, #9271f6 100%);
-    background-blend-mode: multiply;
-}
-
-.projects .content{
-    margin-top: 30px;
-}
-
-.project-card {
-    background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 20px;
-    transition: 0.7s ease;
-}
-
-.project-card:hover {
-   transform: scale(1.1);
-}
-
-.project-card:hover .project-image {
-    opacity: 0.9;
- }
-
-.project-image img{
-    width: 100%
-}
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 0.8em;
-    color: #000;
-}
-
-.project-title {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #3a6cf4;
-}
-
-.more-details:hover {
-    color: #601cfc;
-}
-
-.contact .icon{
-    font-size: 4.5em;
-}
-
-.contact .info h3 {
-    color: #000;
-}
-
-.contact .info p {
-    font-size: 1.5em;
-}
-
-.footer {
-    background-color: #000016;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.footer-title span {
-    color: #3a6cf4;
-}
-
-.footer .social-icons a{
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
-}
-
-@media (max-width:1023px){
-    header{
-        padding: 12px 20px;
-    }
-
-    .navigation a{
-        padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-
-    section{
-        padding: 80px 20px;
-    }
-
-    .main-content h2{
-        font-size: 1em;
-    }
-
-    .main-content h3{
-        font-size: 1.6em;
-    }
-
-    .content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-    }
-
-    .main-content h2{
-        font-size: 0.8em;
-    }
-
-    .main-content h3{
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-
-    }
-}
-    /* ======== بداية الإضافات لجعل الصفحة ريسبونسف ======== */
-
-/* جعل جميع الصور مرنة */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* إزالة background-attachment fixed على الشاشات الصغيرة لتحسين الأداء */
-@media (max-width: 768px) {
-  .main,
-  .cards,
-  .projects {
-    background-attachment: scroll !important;
-  }
-}
-
-/* قائمة التنقل تتحول لأعمدة بدل صفوف */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px !important;
-  }
-  .navigation {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-  .navigation a {
-    flex: 1 1 45%;
-    padding: 10px 5px !important;
-    box-sizing: border-box;
-  }
-}
-
-/* تعديل البادينج العام للمحتوى */
-@media (max-width: 768px) {
-  section {
-    padding: 60px 20px !important;
-  }
-}
-
-/* بطاقات الكروت تصطف في عمود واحد على الشاشات المتوسطة */
-@media (max-width: 992px) and (min-width: 641px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card, .project-card {
-    width: 90% !important;
-    margin: 10px 0 !important;
-  }
-}
-
-/* تحسين عرض النصوص على الشاشات الصغيرة جداً */
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.4em !important;
-  }
-  .main h2 span {
-    font-size: 2.2em !important;
-  }
-  .main-btn {
-    padding: 0.7em 1.5em !important;
-  }
-  .title {
-    font-size: 1.6em !important;
-  }
-}
-
-/* إضافة هوفرتش واضحة على الأزرار عند اللمس */
-@media (hover: none) {
-  .main-btn:hover,
-  .card:hover,
-  .project-card:hover {
-    transform: none !important;
-    background-color: rgba(0,0,0,0.05) !important;
-  }
-}
-/* ======== نهاية الإضافات ======== */
-    /* ===== تحسين ريسبونسف لوح Projects ===== */
-.projects .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
-  margin-top: 30px !important; /* للحفاظ على المسافة الأصلية */
-}
-
-.project-card {
-  width: 100% !important;   /* تأكد من أن البطاقة تملأ العمود */
-  margin: 0 !important;     /* المسافة تُدار عبر gap */
-  min-height: auto;         /* ارتفاع مرن بحسب المحتوى */
-  transition: 0.5s ease;
-}
-
-.project-card .project-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .projects {
-    padding: 60px 0 !important;
-    background-attachment: scroll !important;
-  }
-  .projects .title {
-    font-size: 1.8em !important;
-    margin-bottom: 20px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-info {
-    padding: 0.8em !important;
-  }
-  .project-category {
-    font-size: 0.75em !important;
-  }
-  .project-title span {
-    font-size: 0.9em !important;
-  }
-}
-
-@media (hover: none) {
-  .project-card:hover {
-    transform: none !important;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1) !important;
-  }
-}
-/* ===== نهاية تحسين Projects ===== */
-
-
-  </style>
   <body>
     <header>
       <a href="#" class="logo">Ziad</a>
@@ -503,30 +67,6 @@ img {
         </div>
         <div class="card">
           <div class="icon">
-            <i class="fa-brands fa-react"></i>
-          </div>
-          <div class="info">
-            <h3>REACT.JS</h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">
-            <i class="fa-brands fa-php"></i>
-          </div>
-          <div class="info">
-            <h3>PHP</h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">
-            <i class="fa-brands fa-laravel"></i>
-          </div>
-          <div class="info">
-            <h3>LARAVEL</h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">
             <i class="fa-brands fa-python"></i>
           </div>
           <div class="info">
@@ -544,47 +84,117 @@ img {
       </div>
     </section>
 
-        <section class="projects" id="projects">
+    <section class="projects" id="projects">
       <h2 class="title">Projects</h2>
       <div class="content">
-        <div class="project-card">
+        <!-- ===== START: Project Card 1 (Project 01) ===== -->
+        <article class="project-card">
           <div class="project-image">
-            <img src="images/لقطة الشاشة 2025-08-03 103620.png" />
+            <img
+              src="images/لقطة الشاشة 2025-08-03 103620.png"
+              alt="منصة تعليمية متكاملة"
+            />
+            <div class="project-hover">
+              <a href="https://ziada1.pythonanywhere.com/" class="view-project">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
           <div class="project-info">
-            <p class="project-category">
-              FRONT-END HTML and CSS and JAVASCRIPT BACK-END and PYTHON and
-              DJANGO
-            </p>
-            <strong class="project-title">
-              <span> منصة تعليمية متكاملة </span>
-              <a
-                href="https://elafendi.pythonanywhere.com/"
-                class="more-details"
-                >More details</a
-              >
-            </strong>
+            <span class="project-eyebrow">Project 01</span>
+            <h3 class="project-title" lang="ar">منصة تعليمية متكاملة</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+            </div>
           </div>
-        </div>
-        <div class="project-card">
+        </article>
+        <!-- ===== END: Project Card 1 (Project 01) ===== -->
+
+        <!-- ===== START: Project Card 2 (Project 02) ===== -->
+        <article class="project-card">
           <div class="project-image">
-            <img src="images/لقطة الشاشة 2025-08-03 103722.png" />
-          </div>
-          <div class="project-info">
-            <p class="project-category">
-              FRONT-END HTML and CSS and JAVASCRIPT BACK-END and PYTHON and
-              DJANGO
-            </p>
-            <strong class="project-title">
-              <span> منصة تعليمية متكاملة </span>
+            <img src="images/MMM.png" alt="منصة تعليمية متكاملة" />
+            <div class="project-hover">
               <a
                 href="https://adminnnjeuei2l2.pythonanywhere.com"
-                class="more-details"
-                >More details</a
+                class="view-project"
               >
-            </strong>
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
+          <div class="project-info">
+            <span class="project-eyebrow">Project 02</span>
+            <h3 class="project-title" lang="ar">منصة تعليمية متكاملة</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+            </div>
+          </div>
+        </article>
+        <!-- ===== END: Project Card 2 (Project 02) ===== -->
+
+        <!-- ===== START: Project Card 3 (Project 03) - duplicated from Project 02, change image/link/title as needed ===== -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/093303.png" alt="منصة تعليمية متكاملة" />
+            <div class="project-hover">
+              <a href="https://ziadb1.pythonanywhere.com/" class="view-project">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-eyebrow">Project 03</span>
+            <h3 class="project-title" lang="ar">منصة توصيل متكاملة</h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+            </div>
+          </div>
+        </article>
+        <!-- ===== END: Project Card 3 (Project 03) ===== -->
+
+        <!-- ===== START: Project Card 4 (Project 04) - duplicated, change image/link/title as needed ===== -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/093640.png" alt="منصة لإدارة شركة أجهزة منزلية" />
+            <div class="project-hover">
+              <a href="0000000000000000000" class="view-project">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-eyebrow">Project 04</span>
+            <h3 class="project-title" lang="ar">
+              تحت الإنشاء" ---- منصة لإدارة شركة أجهزة منزلية"
+            </h3>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+            </div>
+          </div>
+        </article>
+        <!-- ===== END: Project Card 4 (Project 04) ===== -->
+
         <!--<div class="project-card">
           <div class="project-image">
             <img src="images/لقطة الشاشة 2025-08-03 104358.png" />
@@ -605,8 +215,10 @@ img {
           </div>
         </div>-->
       </div>
+      <!---------------------------------------------------->
+      <!---------------------------------------------------->
     </section>
-     
+
     <section class="cards contact" id="contact">
       <h2 class="title">Let's work together</h2>
       <div class="content">
@@ -632,16 +244,54 @@ img {
     </section>
 
     <footer class="footer">
-      <p class="footer-title">Copyrights @ <span>Ziad Ahmed</span></p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+      <div class="footer-glow"></div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">Ziad</a>
+          <p class="footer-tagline">
+            Full Stack Developer building fast, elegant web experiences from
+            front to back.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="#Skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Get in touch</h4>
+          <a href="tel:01556060683">01556060683</a>
+          <a href="mailto:business@Ziad.com">business@Ziad.com</a>
+        </div>
+
+        <div class="footer-links footer-social-col">
+          <h4>Follow</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-title">
+          Developed by programmer <span>Ziad Ahmed</span>
+        </p>
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
       </div>
     </footer>
   </body>
 </html>
+
 
 
 
